@@ -13,7 +13,7 @@ plate_y = stem_outer + 10;
 plate_x = stem_outer + 10;
 plate_z = stem_thickness;
 
-shelf_x = 200;
+shelf_x = 195;
 shelf_y = 150;
 shelf_z = stem_thickness;
 shelf_offset = 50;
