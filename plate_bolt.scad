@@ -2,16 +2,7 @@ include <threads.scad>
 include <vars.scad>
 
 module PlateBolt() {
-  bolt_diam = 6;
-  cube_side = bolt_diam*2;
-  subtract_head = 0;
-
-  translate([0,0,-subtract_head]) difference() {
-    union() {
-      MetricBolt(diameter=bolt_diam, length=plate_z*2);
-    }
-    cube([cube_side,cube_side,subtract_head*2], center=true);
-  }
+  MetricBolt(diameter=bolt_diam, length=plate_z + shelf_z);
 }
 
 module PlateBolts() {
