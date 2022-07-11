@@ -16,10 +16,25 @@ module PlateBolts() {
   ]) {
     tx = plate_x/2-10;
     ty = plate_y/2-10;
-    translate([tx, ty, 0]) PlateBolt();
-    translate([-tx, ty, 0]) PlateBolt();
-    translate([tx, -ty, 0]) PlateBolt();
-    translate([-tx, -ty, 0]) PlateBolt();
+    translate([tx, ty, 0]) {
+      PlateBolt();
+      translate([-bolt_twin_x, -bolt_twin_y, 0]) PlateBolt();
+    }
+
+    translate([-tx, ty, 0]) {
+      PlateBolt();
+      translate([bolt_twin_x, -bolt_twin_y, 0]) PlateBolt();
+    }
+
+    translate([tx, -ty, 0]) {
+      PlateBolt();
+      translate([-bolt_twin_x, bolt_twin_y, 0]) PlateBolt();
+    }
+
+    translate([-tx, -ty, 0]) {
+      PlateBolt();
+      translate([bolt_twin_x, bolt_twin_y, 0]) PlateBolt();
+    }
   }
 }
 

@@ -10,12 +10,14 @@ stem_center_to_wall = 60;
 // in all the way.
 bolt_diam = 9;
 bolt_extra = 2.5;
+bolt_twin_x = 22;
+bolt_twin_y = 18;
 
 cord_diam = 6.5;
 cord_bend = 7.7;
 
-plate_y = stem_outer + 15;
-plate_x = stem_outer + 15;
+plate_y = stem_outer + 30;
+plate_x = stem_outer + 100;
 plate_z = stem_thickness;
 body_y_offset = -(plate_y - stem_outer)/2;
 

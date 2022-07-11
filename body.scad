@@ -7,7 +7,7 @@ module Stem() {
       0,
       stem_outer/2,
       0,
-  ]) rotate([0,180,0]) difference() {
+  ]) rotate([0,180,180]) difference() {
     cylinder(h=stem_height, d=stem_outer, $fn=fn);
     rotate([0,0,90]) translate([0,0,-1]) {
       cylinder(h=stem_height+1-cord_bend, d=stem_inner, $fn=fn);
