@@ -4,17 +4,17 @@ stem_thickness = 5;
 stem_height = 20;
 stem_outer = stem_inner + 2*stem_thickness;
 
-bolt_diam = 6;
+bolt_diam = 9;
 
 cord_diam = 6.5;
 cord_bend = 7.7;
 
-plate_y = stem_outer + 10;
-plate_x = stem_outer + 10;
+plate_y = stem_outer + 15;
+plate_x = stem_outer + 15;
 plate_z = stem_thickness;
 
 shelf_x = 195;
-shelf_y = 150;
+shelf_y = 195;
 shelf_z = stem_thickness;
 shelf_offset = 50;
 
