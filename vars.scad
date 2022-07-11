@@ -4,7 +4,11 @@ stem_thickness = 5;
 stem_height = 20;
 stem_outer = stem_inner + 2*stem_thickness;
 
+// bolt_extra is extra length added to the bolts. if bolts are screwed all the way in
+// the head will pop off, by making them a little too long we won't have to screw them
+// in all the way.
 bolt_diam = 9;
+bolt_extra = 2.5;
 
 cord_diam = 6.5;
 cord_bend = 7.7;

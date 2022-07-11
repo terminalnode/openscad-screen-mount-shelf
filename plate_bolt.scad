@@ -2,7 +2,10 @@ include <threads.scad>
 include <vars.scad>
 
 module PlateBolt() {
-  MetricBolt(diameter=bolt_diam, length=plate_z + shelf_z);
+  MetricBolt(
+      diameter=bolt_diam,
+      length=plate_z + shelf_z + bolt_extra
+      );
 }
 
 module PlateBolts() {
