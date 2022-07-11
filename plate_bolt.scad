@@ -11,7 +11,7 @@ module PlateBolt() {
 module PlateBolts() {
   rotate([0,180,0]) translate([
       0,
-      plate_y/2,
+      plate_y/2 + body_y_offset,
       stem_height-9,
   ]) {
     tx = plate_x/2-10;

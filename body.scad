@@ -5,7 +5,7 @@ include <plate_bolt.scad>
 module Stem() {
   translate([
       0,
-      plate_y/2,
+      stem_outer/2,
       0,
   ]) rotate([0,180,0]) difference() {
     cylinder(h=stem_height, d=stem_outer, $fn=fn);
@@ -17,14 +17,12 @@ module Stem() {
 }
 
 module Plate() {
-  translate([
-      plate_x/2,
-      0,
-      -stem_height,
-  ]) difference() {
-    rotate([0,180,0]) {
-      cube([plate_x,plate_y,plate_z]);
-    }
+  difference() {
+    translate([
+        -plate_x/2,
+        body_y_offset,
+        -stem_height-plate_z,
+    ]) cube([plate_x,plate_y,plate_z]);
     PlateBolts();
   }
 }

@@ -17,6 +17,7 @@ cord_bend = 7.7;
 plate_y = stem_outer + 15;
 plate_x = stem_outer + 15;
 plate_z = stem_thickness;
+body_y_offset = -(plate_y - stem_outer)/2;
 
 shelf_x = 195;
 shelf_y = 195;
